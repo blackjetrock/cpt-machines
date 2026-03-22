@@ -1,0 +1,100 @@
+1       +24V GND
+2       +24V GND
+3       +24V GND
+4       +24V GND
+5       +24V
+6       +24V
+7       +24V
+8       +24V
+9
+10
+11      -RST
+12
+13      READY
+14      -WAIT
+15
+16
+17      AUD
+18
+19
+20      -DB0
+21      -DB1
+22      -DB2
+23      -DB3
+24      -DB4      
+25      -DB5
+26      -DB6
+27      -DB7
+28      -DB8
+29      -HLDAK
+30      -MEMRD
+31      -I/O RD
+32      -I/O WRT   -MEMWR
+33                 -IOWR
+34      GND
+35      -BIN
+36      GND
+37      -BOUT
+38      GND
+39
+40      -A0
+41      -A1
+42      -A2
+43      -A3
+44      -A4
+45      -A5
+46      -A6
+47      -A7
+48      -A8
+49      -A9
+50      -A10
+51      -A11
+52      -A12
+53      -A13
+54      -A14
+55      -A15
+56      -TC
+57      -REF
+58      -PARITY ERROR
+59
+60      -I/O 60
+61      -I/O 20
+62      
+63      -I/O 30
+64
+65      -I/O 40
+66
+67      -EOF
+68
+69      -INTERRUPT4
+70
+71      -INT3
+72      -INTERRUPT1
+73      -DREQ0
+74      -DACK0
+75      -DREQ1
+76      -DACK1
+77      -DREQ2
+78      -DACK2
+79      -DREQ3
+80      -DACK3
+81      PHI2
+82      GND
+83
+84      GND
+85
+86      GND
+87      -5V
+88      -5V
+89      -12V
+90      -12V
+91      +12V
+92      +12V
+93      +5V
+94      +5V
+95      +5V
+96      +5V
+97      GND
+98      GND
+99      GND
+100     GND
