@@ -1,0 +1,18 @@
+CPT8500 bACKPLANE
+
+
+1       GND    
+2       Pin 10
+3       Pin 17
+4       Pin 83
+5       Pin 85
+6       GND
+7       GND
+8       -12V
+9       +12V
+10      GND
+11      GND
+12      +5v
+
+
+-5V generated on the backplane with a 7905
