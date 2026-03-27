@@ -7,14 +7,14 @@
 7       +24V
 8       +24V
 9
-10
-11      -RST
+10      -CLEAR  PSU connection
+11      -RST RESET
 12
 13      READY
 14      -WAIT
 15
 16
-17      AUD
+17      AUD     PSU connection
 18
 19
 20      -DB0
@@ -80,9 +80,9 @@
 80      -DACK3
 81      PHI2
 82      GND
-83
+83                  PSU connection
 84      GND
-85
+85                  PSU connection
 86      GND
 87      -5V
 88      -5V
