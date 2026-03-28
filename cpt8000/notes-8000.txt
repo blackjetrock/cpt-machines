@@ -1,0 +1,7 @@
+Notes about the CPT8000
+
+
+Clock Freq is 2MHz, from 8224 driven by an 18mhz crystal.
+
+IO20 etc select IO space at 002x etc.
+AUD is an audio signal driven from and 8253 timer counter IC into an amplifier.
