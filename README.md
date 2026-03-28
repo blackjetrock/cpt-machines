@@ -1,7 +1,7 @@
 # CPT Machine information
 
 
-The CPt Corporation made a few word processor machines in the 1970s and 80s. There is information here about specifically the:
+The CPT Corporation made a few word processor machines in the 1970s and 80s. There is information here about specifically the:
 
 4200
 8000
