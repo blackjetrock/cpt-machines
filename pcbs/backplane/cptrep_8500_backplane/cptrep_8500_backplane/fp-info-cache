@@ -1,4 +1,4 @@
-26260036192879034
+26263585456631036
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -104264,6 +104264,20 @@ Varistor VF
 0
 2
 2
+ajm-cpt
+cpt-8500-backplane-connector
+
+
+0
+0
+0
+ajm-hp25
+Untitled
+
+
+0
+0
+0
 ajm-hp25
 hp25-display-socket
 Through hole straight socket strip, 1x20, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
