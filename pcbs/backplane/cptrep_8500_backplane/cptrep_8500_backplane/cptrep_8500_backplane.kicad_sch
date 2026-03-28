@@ -1837,6 +1837,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 150.495) (xy 74.93 146.685)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b009834-704b-4673-8008-5318d11b4d48")
+	)
+	(wire
+		(pts
 			(xy 58.42 71.12) (xy 68.58 71.12)
 		)
 		(stroke
@@ -1934,6 +1944,26 @@
 			(type default)
 		)
 		(uuid "41a021de-2975-42a3-8722-8a7c409a9fdd")
+	)
+	(wire
+		(pts
+			(xy 57.785 150.495) (xy 74.93 150.495)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46e64420-104f-49ad-9b77-ff055621d3e2")
+	)
+	(wire
+		(pts
+			(xy 57.785 158.115) (xy 62.865 158.115)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49549e5c-ad33-452d-96aa-09107dccf21f")
 	)
 	(wire
 		(pts
@@ -2174,6 +2204,16 @@
 			(type default)
 		)
 		(uuid "b438c960-0735-40fa-9df4-1a9303b2127b")
+	)
+	(wire
+		(pts
+			(xy 62.865 158.115) (xy 62.865 161.925)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d368449e-f7c1-4659-a490-61fdca8521d0")
 	)
 	(wire
 		(pts
@@ -2735,6 +2775,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 62.865 161.925 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2de3d3f0-6ba2-4bfd-a77e-6b6334e09a43")
+		(property "Reference" "#PWR091"
+			(at 62.865 168.275 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 62.865 167.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.865 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.865 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 62.865 161.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7ce1492-bdbf-4082-b218-e0ea53f61236")
+		)
+		(instances
+			(project "cptrep_8500_backplane"
+				(path "/6bc3ef00-9758-4385-9185-3572b301e705"
+					(reference "#PWR091")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 43.18 87.63 0)
 		(mirror y)
 		(unit 1)
@@ -2928,6 +3035,72 @@
 			(project "cptrep_8500_backplane"
 				(path "/6bc3ef00-9758-4385-9185-3572b301e705"
 					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+24V")
+		(at 74.93 146.685 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c011409-ac1a-44a0-8928-f0b25ddf55f0")
+		(property "Reference" "#PWR090"
+			(at 74.93 150.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+24V"
+			(at 74.93 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+24V\""
+			(at 74.93 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0eaa15e-c7ae-4b4d-bab7-1496c3ae6352")
+		)
+		(instances
+			(project "cptrep_8500_backplane"
+				(path "/6bc3ef00-9758-4385-9185-3572b301e705"
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
