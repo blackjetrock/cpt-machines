@@ -87,3 +87,21 @@ Thanks for the memories,
 Rich Jones
 Metasoft, Inc.
 metasoft@erols.com
+
+
+Send large sums of money and I will make you a disk! ;-)
+
+The 8000, 6000, 9000 software was really pretty amazing. Real Multitalking and hardware interrupt based. And done when? Before the IBM PC was ever released. Unlike the other junk that was made after it that spent so many computer cycles polling things all the time (Insane) The display was pretty amazing as it had the ability to use hardware to direct each line to different memory locations. Allowing things like ultra fast scrolling and a smooth look that even now (With some of the garbage published) looked impossibly good. I remember how cool it was to have an 8100 and a phone modem and be able to access the few things that were available then. Mostly mainframes that were not meant for me to be fiddling with. ;-) I had one of those 14 inch 30 mb hard disks and thought it was about THE coolest computer anyone could have and when I think about it now back then it was. BTW I worked with "metasoft" who is one of the greatest guys in the world.
+
+When we were together in the R&D world one of my jobs was to evaluate the new boxes from IBM, Apple, Atari and later the Amiga. The IBM to me seemed like the crudest thing I had ever seen. 64K of memory one floppy disk a green text screen or a 320x200 color video game screen. Who knew that those 3 letters would sell SO many of these machines. Our old machine had 256K of memory (With Parity) had the ability to connect to a variety of Hard Disks back when that was pretty wild stuff. Had built in communications, support for multilingual and printed what you saw on the screen an entire page at a time. Forget 80 x ? what was it 80 x 25?? Anyway people were going bonkers to buy it no matter how crude they were. Price wise it was clearly much cheaper. But what a step down. To me it was like flying around on the Star Ship Enterprise and choosing to turn in your Transporter card for a train ticket.
+
+The Apple seemed to me to be more interesting at least in that it was ALL graphics mode all the time. But the screens seemed so tiny and the inability to upgrade the hardware looked to me like a death wish. I thought whoever did the Amiga had some good ideas. The paged screen, graphics core and multitasking at least showed they were beyond "copying" CPM which is what I felt MSDOS was. *And now know it was. Google QDDOS.
+
+Atari was a weird mix. Another copy of CPM for 68000 but some nicer hardware for graphics and such...
+
+CPT had I think a far better product then the others a much better core with its close hardware software connection but a lot of the company wanted to do what others were doing. It was like they were in the Beatles and wanted to throw out Sgt Pepper and record a "better" :confused: record by doing some Archies cover songs. Finance wise I think the true kiss of death was the day all the wealthy sales guys drove up in nicer cars then the "execs" and they deemed that the sales folks should only be paid a salary. No more commissions. As you can guess the rich salesmen drove away never to be seen or heard from again. Insane! You want rich salesmen who are paid only commissions.
+
+Thanks just my 2 cents worth from the inside.
+
+
+
