@@ -2228,6 +2228,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 160.655 28.575)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50281c50-fde3-4c6a-8e6d-ecf8406cc798")
+	)
+	(junction
+		(at 112.395 28.575)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75d50e12-d04b-46b9-8eaf-442adafc3786")
+	)
 	(wire
 		(pts
 			(xy 202.565 51.435) (xy 153.67 51.435)
@@ -2450,6 +2462,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 26.035) (xy 160.655 26.035)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "263dc33c-d705-48c1-8ad5-049e530d4a3f")
+	)
+	(wire
+		(pts
 			(xy 73.025 125.095) (xy 119.38 125.095)
 		)
 		(stroke
@@ -2457,6 +2479,16 @@
 			(type default)
 		)
 		(uuid "27f26ca3-f9b3-4985-8f06-6e82303409c7")
+	)
+	(wire
+		(pts
+			(xy 160.655 28.575) (xy 160.655 32.385)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ab36684-0a5d-4db0-9b29-737cca69655f")
 	)
 	(wire
 		(pts
@@ -2850,6 +2882,16 @@
 	)
 	(wire
 		(pts
+			(xy 112.395 28.575) (xy 112.395 32.385)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72729ecd-7714-4bca-b7fd-21d4cded0c11")
+	)
+	(wire
+		(pts
 			(xy 73.025 97.155) (xy 119.38 97.155)
 		)
 		(stroke
@@ -2927,6 +2969,16 @@
 			(type default)
 		)
 		(uuid "7ce8d463-86ea-4d2c-a095-548e409b54c7")
+	)
+	(wire
+		(pts
+			(xy 119.38 28.575) (xy 112.395 28.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fc1a0c9-ee59-4cd0-8ab1-540023573377")
 	)
 	(wire
 		(pts
@@ -3017,6 +3069,16 @@
 			(type default)
 		)
 		(uuid "9dc6c498-e074-467e-94c0-d1b5ae12b85f")
+	)
+	(wire
+		(pts
+			(xy 160.655 26.035) (xy 160.655 28.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ea80bb3-584b-4f6b-a068-23b53b1aa225")
 	)
 	(wire
 		(pts
@@ -3120,6 +3182,26 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 28.575) (xy 160.655 28.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7b70dc5-72ed-4705-8cf9-9fdb6d6bb6f2")
+	)
+	(wire
+		(pts
+			(xy 112.395 26.035) (xy 112.395 28.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8ad94ae-a9d0-4492-bd02-60bb52f4a0e9")
+	)
+	(wire
+		(pts
 			(xy 59.055 102.235) (xy 67.945 102.235)
 		)
 		(stroke
@@ -3167,6 +3249,16 @@
 			(type default)
 		)
 		(uuid "c1466fa1-50d6-42d3-938d-381d37967d60")
+	)
+	(wire
+		(pts
+			(xy 119.38 26.035) (xy 112.395 26.035)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca45acbd-6112-4247-9e5f-f9ff57dd17de")
 	)
 	(wire
 		(pts
@@ -4748,6 +4840,71 @@
 			(project "cptrep-diag-card"
 				(path "/75f9f2a9-074b-4f58-a7a7-2a17dd71988c/233374be-d93d-42b3-b222-4739a83f5cdd"
 					(reference "R54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pico-9000-pack-rescue:GND-power")
+		(at 112.395 32.385 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05a9f771-adfe-4296-81c1-d284b5648842")
+		(property "Reference" "#PWR035"
+			(at 112.395 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 112.522 36.7792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 112.395 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 112.395 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 112.395 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7117636e-b47f-4a3f-91e3-6f883c0528bc")
+		)
+		(instances
+			(project "cptrep-diag-card"
+				(path "/75f9f2a9-074b-4f58-a7a7-2a17dd71988c/233374be-d93d-42b3-b222-4739a83f5cdd"
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -8270,6 +8427,72 @@
 			(project "cptrep-diag-card"
 				(path "/75f9f2a9-074b-4f58-a7a7-2a17dd71988c/233374be-d93d-42b3-b222-4739a83f5cdd"
 					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "pico-9000-pack-rescue:GND-power")
+		(at 160.655 32.385 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c9a67046-3c3f-4e1c-9e09-8e1f068da155")
+		(property "Reference" "#PWR034"
+			(at 160.655 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.528 36.7792 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.655 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.655 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.655 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "abf9b111-5310-4d2c-8880-de2dbb3e80cb")
+		)
+		(instances
+			(project "cptrep-diag-card"
+				(path "/75f9f2a9-074b-4f58-a7a7-2a17dd71988c/233374be-d93d-42b3-b222-4739a83f5cdd"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
