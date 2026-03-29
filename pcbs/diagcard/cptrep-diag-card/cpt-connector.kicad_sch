@@ -7872,7 +7872,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ajm-cpt:cpt-card-edge-100"
 			(at 146.05 86.995 0)
 			(effects
 				(font
