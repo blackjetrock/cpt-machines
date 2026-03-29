@@ -5,3 +5,85 @@ Clock Freq is 2MHz, from 8224 driven by an 18mhz crystal.
 
 IO20 etc select IO space at 002x etc.
 AUD is an audio signal driven from and 8253 timer counter IC into an amplifier.
+
+
+
+Vintage Computer Federation Forums
+Log inRegister
+Please review our updated Terms and Rules here
+ Your Vintage Computer Collections
+what do you think of my CPT 8535?
+ Thread starterFluxor  Start dateJul 23, 2007
+Fluxor
+New Member
+Jul 23, 2007
+#1
+Hello everyone,
+
+I just found this great site..looks good and wow! there are some great collections on here! that's for sure. I myself have a very small collection, as I just started to get into collecting all types of vintage technology, not just computer systems. I love the early cpu's and systems, 70's and 80's, but I love em all really..
+
+Just thought what you thought of this great system I have, it's from the CPT Corporation (now defunct), circa 1982. Originally these went for $13,000 (!!) for the system including cpu, keyboard, printer and boot, utility disks.
+It's a "dedicated word processor", it does just that, no GUI or other programs exist for it. It still runs great and it can't be beat for producing great word processed documents.
+
+Thought I'd mention it cuz I don't see CPTs mentioned much by folks. Besides the CPTs, I have some old Apples and an old Commodore. Non computer stuff that's old I have an old wall phone with brass bells, annunciators, camera with real bellows, and a few morse code telegraph keys. like I said, small collection, but you have to s tart somewhere.
+
+Carlos
+Terry Yager
+Veteran Member
+Jul 23, 2007
+#2
+The CPT machines were actually full-blown 8080-based computers, running CP/M from thier 8" drives. The parent company never released much software, but some third-party stuff (other than word-processing) exists for it somewhere.
+
+--T
+Fluxor
+New Member
+Jul 24, 2007
+#3
+Terry Yager said:
+The CPT machines were actually full-blown 8080-based computers, running CP/M from thier 8" drives. The parent company never released much software, but some third-party stuff (other than word-processing) exists for it somewhere.
+
+--T
+
+Yes, that sounds right to me...these machines pre-dated the PCs that had the first intel chips..the whole x86 architectures...windows OS, GUI, etc.
+
+The 8535 does indeed have 2 8" drives. The second drive gave the machine the file copying capabilities from one drive to the other, for backups and also storing/retrieving often-used text. This was available only on that machine which was top of the line CPT. The other models only had one drive.
+Metasoft
+Member
+Mar 24, 2008
+#4
+CPT Word Processors - From the source
+
+CPT Word Processors - From the source
+
+Hi,
+
+Just had a trip down memory lane, sitting at my PC and searching on Google. I typed-in “CPT word processor” and look what I found...
+
+Now they're museum pieces!
+
+My first job in the "computer industry" was as a service tech. for CPT word processors. I started repairing CPT 4200 (Cassette Powered Typewriters) in 1978. Later, just after the CPT 8000 was released, I moved to Minneapolis and became a software/hardware engineer for CPT Corp.
+
+The CPT 8000 was a computer way ahead of its time. Although it only employed an Intel 8080, running at 2 mhz and 64K of memory (later expanded to 128K and finally 256K, using an upper bank switching scheme) its operating system was fully multi-tasking and the file system was a modified B-tree design. All of the software was designed and written in-house. CP/M was an addition that could be purchased separately.
+
+All CPT models had 2 8-inch floppy drives, except the 6000 model. The 6000 was a cost-reduced version of the 8000. It had less memory, one drive and a smaller display.
+
+Working in the Research Dept. for CPT, I helped in the design of the 6100, 8100, 8500, 9000, WordPak I and WordPak II, and the Phoenix.
+
+The Phoenix machine was a dual processor design that ran an 8086 (16-bit CPU) and an 8085 (8-bit CPU) together on a shared bus. It ran (we wrote) a multi-processor, multi-tasking operating system that ran 8-bit and 16-bit code simultaneously! The 15" monitor displayed a 1024x768, 256 level grayscale, picture at 78 hz refresh rate. The display fonts were anti-aliasing renditions of Courier, Arial, and New Times Roman. There were even eight "soft key" graphics displayed at the bottom of the screen that changed functions as the corresponding menu keys on the keyboard were touched. It was an amazing piece of work for 1982-84!
+
+There was also a hybrid model of the Phoenix that used a National Semiconductor 32000 based CPU, running at 16 mhz. The National chip could flip between 8080 8-bit code and native 8086 like 16-bit code internally. It was very fast, but never really made it into production.
+
+When we (the CPT Research Group) saw the IBM PC for the first time, we all laughed. It was like a kid's toy compared to what we were working on. Little did we know...
+
+The last computer that CPT built (but never released) was based on an 80386 CPU, running at 20 mhz. This was in 1985/86, when most "fast PCs" were grinding along at 6 to 8 mhz!
+
+We had ported our operating system to 386 code and were able to run MS-DOS as a sub-task to our main system. This allowed people to run PC programs (like Lotus 123) on the CPT Phoenix and flip between the word processing system and the DOS application by simply pressing a function key. Plus, the DOS programs ran about four times faster than a PC, but no one cared. The Phoenix was expensive and the PCs were getting cheaper and cheaper.
+
+The last thing I did was to port MS Windows and Ventura Publisher to the Phoenix and 9000 machines. That's what our customers wanted. Windows was a dog and we immediately started working on a graphics processor based display board to help speed it up. The dedicated word processor market was shrinking fast and the PC word processing software was getting better and better. CPT, once the #1 word processing system in the world was dying before our eyes.
+
+Anyway, I digress. I have a bunch of CPT odds and ends laying around and even more boxes of 8” disks than I care to admit to. They are a constant reminder to me that, “Making a better mouse trap”, is not always successful. If you need real answers, software, information, etc. just drop me a note. I’ll be glad to help.
+
+Thanks for the memories,
+Rich Jones
+Metasoft, Inc.
+metasoft@erols.com
