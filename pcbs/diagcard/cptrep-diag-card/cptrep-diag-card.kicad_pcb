@@ -24364,6 +24364,18 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "Jumper for SD card\nEnsure GP22,GP21,GP20,\nGP19,GP18,GP16 are free"
+		(at 218.44 40.894 90)
+		(layer "F.SilkS")
+		(uuid "344d8fc0-75e2-480e-800c-58efd40a9317")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "HLDACK RESET\nREADY  WAIT\nGP26   GP17\nGP15   GP14"
 		(at 184.023 158.623 0)
 		(layer "F.SilkS")
@@ -24644,6 +24656,18 @@
 		(at 176.53 100.965 0)
 		(layer "F.SilkS")
 		(uuid "c80ca55a-1dda-4631-b8e6-372fc16285a0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "CPT 8500 Diagnostic Card\nV1.0 March 2026\nmenadue@gmail.com"
+		(at 195.464 83.439 0)
+		(layer "F.SilkS")
+		(uuid "dec00812-3750-49ad-bf00-342418685ce0")
 		(effects
 			(font
 				(size 1 1)
