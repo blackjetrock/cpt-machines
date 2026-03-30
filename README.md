@@ -26,9 +26,13 @@ The 8500 is an 8000 in a condensed form. The circuitry from the 8000 has been sq
 
 I have a set of CPT8500 PCBs, but nothing else. I'm planning on recreating the parts I need in order to get the boards running again.
 
-The backplane is the first part needed:
+The backplane is the first part needed, this has been designed and is untested:
 
 <img width="1081" height="1149" alt="front-render" src="https://github.com/user-attachments/assets/82faf523-eaeb-4224-9492-03d5facf1d06" />
 <img width="1060" height="1302" alt="back-render" src="https://github.com/user-attachments/assets/5f69b55c-5716-46a5-a6f2-c52ea1d82c18" />
+
+I've also designed a diagnostic/debug card (untested) which is a Pico on a bus:
+
+<img width="800" height="1105" alt="cptdiag" src="https://github.com/user-attachments/assets/9e59a69a-0107-48d5-b5b1-4b3076cb1098" />
 
 
