@@ -35,4 +35,9 @@ I've also designed a diagnostic/debug card (untested) which is a Pico on a bus:
 
 <img width="800" height="1105" alt="cptdiag" src="https://github.com/user-attachments/assets/9e59a69a-0107-48d5-b5b1-4b3076cb1098" />
 
+Acknowledgements
+================
+
+Thanks to Adrian at Binary Dinosaurs, who has helped a lot with data from his real CPT machine.
+Rich, who used to work at CPT has generously scanned and supplied the chematics of the 8000, without which these projects would not have started.
 
