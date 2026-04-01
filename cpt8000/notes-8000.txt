@@ -104,4 +104,140 @@ CPT had I think a far better product then the others a much better core with its
 Thanks just my 2 cents worth from the inside.
 
 
+================================================================================
 
+
+Here are a few interesting things that are idiosyncratic to the CPT 8000/8500:
+
+ 
+
+On the CPU board there is logic that detects one special 8080 instruction – The PCHL (Load Program Counter with Contents of Register pair HL) Opcode E9H.  When the 8000 is powered on (the reset line goes active) it sets a flip-flop that enables the autoload prom.  Since the 8080 begins execution at address 0000H, the autoload prom on the board needs to be at this address when the CPU starts.  Then there needs to be a way to then turn the autoload prom off, so addresses from 0000H can revert to actual RAM.  The designer of the CPU board looked at the 8080’s instruction set and found the PCHL opcode.  He added logic that looks at the data bus, and when the E9H instruction is sensed, it clears the autoload prom flip-flop, turning the prom off.  To make this work, the program contained within the autoload prom, must always end with the PCHL E9H instruction, so the autoload prom will be turned off after the system disk is booted and system operation begins.   Look at the CPU schematics and you’ll find it.
+
+ 
+
+Also, since the original autoload prom was only 256 bytes, and it had to do a lot – Clear RAM, Initialize the display, Recalibrate the drives, Display the “Insert Program Disk”’ message, Beep the speaker, Wait for a disk to be inserted, Read the boot sector, Determine if it was a Legit CPT Program disk (not a copy) and either load it or reject it, if it was counterfeit – There was some serious ”bit packing” used to cram all that into 256 bytes.  One clever trick used was the way RAM was initialized to zeros – The stack pointer was used, since it automatically pushes word-sized values into RAM and at the same time decrements its address pointe.  The RAM clearing operation used this method because it ran very fast and used minimum instructions.   If you dump the autoload prom (by the way the 8500 had a much larger autoload prom, since it was a later design and I begged for more space) the first thing you’ll see are multiple Stack Push instructions in a small loop program.  This is the RAM initializing section. 
+
+ 
+
+The last operation of the autoload prom checks if the Program Disk is valid or not.  This is done by checking the status of the boot sector read operation.  There was a special way to write sectors on floppy disks – with or without an “Address Mark”.  All floppy sectors were normally written with an Address Mark.  This was supposed to be used for early floppy surface defect correction.  When early floppies were formatted, sometimes there would be imperfections on the media that would cause some sectors to be faulty.  During the verification process, the disk was scanned and if bad sectors were found, they were re-written with “Deleted Address Marks”.  Then, when the floppy was used, programs could tell if a sector was good by checking for Deleted Address Marks before the data was written.  CPT used this little known feature to “mark” their Program Disks.  Only the Program Disk had the sector at Track 0, Sector 0 (were the boot program resided) written with a Deleted Address Mark.  So, if someone copied a Program Disk, it would duplicate with no errors.  But, when that disk was used to try to boot the CPT machine, it would immediately reject it with a loud noise and unload the floppy disk heads.  Because the CPT Program Disk was very valuable and updated versions were regularly sold, offering new features, that steadily increased the machine's capabilities and business worth.  If someone could duplicate Program Disks, CPT would lose a lot of revenue.  This worked for many years, no one figured it out.  It was a simple copy protection scheme.  Note, it is not possible to format floppy disks with Deleted Address Marks using the 1771 disk controller if pin 37 is grounded.  All CPT disk controllers have pin 37 grounded on their 1771 chips.
+
+--------------------------------------------------------------------------------
+I have relabeled these pictures to what each board is.  The Floppy/Printer/Serial board, socket U44, is missing the FD1771 floppy controller chip.
+
+Also, in the schematics that I sent, the set for the Universal I/O board 910257, was never put into production.  This was newer version of the Floppy/Printer/Serial Comm. Board that was slated to go into the 8500 models.  It used an 8272 (Nec 765) floppy controller, instead of the older
+
+FD1771, so 5.25” disks could be installed.  But, that board did not work, because the floppy data separator circuitry was bad, so the board was scrapped.  I happen to have these schematics because I was assigned to debug the first run boards and figure out why they weren’t working.
+
+I will send schematics for the floppy controller board that uses the FD1771 chip.
+
+ 
+
+These pictures show boards that are in pretty good condition, except for the display controller.
+
+ 
+
+None of these boards used a Z80.  The chip at U43 on the CPU board is an 8080.  I wrote the autoload/boot prom (chip U34) for this version of the CPT board.  CPT made a later machine, the Phoenix Junior, that was a single board system that did use the Z80.  But none of these boards are that type.  These are a set from the 8500 model.  There was small floppy interface board that is missing.  It was only on the 8500 models, used to convert the 3-phase floppy stepper motor signals into Step and Direction signals that were required on the newer 8” floppy drives.  The 8500 used Tandon and NEC Slimline 8” floppy drives.
+
+================================================================================
+
+--------------------------------------------------------------------------------
+
+As I look at this board more, I realize it’s probably the communications interface board for CPT’s external disk network systems.  CPT created an office network system that used intelligent communication boards that connected through twisted-pair cables between devices.  This was before Ethernet.  The transfer rate was 1MB per second.  The system was incredibly simple to setup – literally just connect the cables and the on-board program (in the board’s ROM) would figure out the rest.  It was one of the first “network systems” on the market. 
+
+ 
+
+There were two systems that CPT made that used this interface:  WordPak and SRS45.  WordPak was the initial system, it looked like a small washing machine, held one or two 10MB Shugart 14” hard drives and could connect to up to 8 CPT word processor units.  A couple of years later, the hard drives had gotten smaller and higher capacity, the SRS45 was made which was housed in the new CPT Phoenix case and used Shugart 8” 20MB or 40MB hard drives, with optional Bernoulli 10MB cartridge drive and/or ¼” steaming tape cartridge backup drive.  These were very innovative for their time: multiple users connected together, shared/not-shared “public & private” file areas and the disk storage space seemed limitless.
+
+ 
+
+Here is a link to the SRS45 Operator and Administrator manuals that I found online.  Reading through them you’ll get an idea of all the capabilities these systems provided.  There’s nothing specifically about the board itself, but it may help you understand the board’s usage.
+
+ 
+
+Best regards,
+
+Rich
+
+ 
+
+CPT SRS45 Operator's Manual : Free Download, Borrow, and Streaming : Internet Archive
+
+ 
+
+CPT SRS45 Administrative Functions Manual : Free Download, Borrow, and Streaming : Internet Archive
+--------------------------------------------------------------------------------
+
+ There is one correction that needs to be made to my previous message. 
+
+ 
+
+This description is incorrect:  To make this work, the program contained within the autoload prom, must always end with the PCHL E9H instruction, so the autoload prom will be turned off after the system disk is booted and system operation begins.
+
+ 
+
+The corrected description:  To make this work, the boot program contained on the Program Floppy disk, must always end with the PCHL E9H instruction, so the autoload prom will be turned off after the system disk is booted and system operation begins.
+
+Here are a few more schematics I found and scanned that may help you.
+
+Some duplicates, but have more of my notes written on them explaining circuit functions.
+
+The mother board signal list should be very helpful.
+
+The I/O Controller board shows 4200 Selectric signals and also TermiNet signals.  I know you’re interested in the 4200, this maybe a little clearer than the previous scan of the I/O Controller board.
+
+The TermiNet was a desktop version of a high-speed band printer made by GE General Electric back in the late 70’s.  Print quality wasn’t great, but it was faster than anything else back then.  It was also really loud when it printing.  So loud in fact, there was a company that made a wood and plexiglass “sound-hood” that was placed over the printer to help keep the noise level down.
+
+ 
+
+There will be a second email with more schematics following this one.
+The boards you have are from a CPT 8500 model word processor.  I can supply schematics for the 8000 model boards.  The difference between the 8000 and 8500 boards are more physical than electronic.  What I mean is, the 8500 boards were newer layouts of the older 8000 boards, and in some cases two or three 8000 boards were combined together into one physical board. 
+
+ 
+
+For example, the board you have pictured as the disk controller is indeed a floppy disk controller, but it also has the serial communications controller circuitry on it, as well as the parallel printer output interface.   In the original 8000 these three components were on 3 separate boards.  When the 8500 was designed they combined these 3 boards into the one board you have.  The schematics that I have, and will supply, will be for each separate board, with a little investigating you will be able to discern each individual section on the board you have.  Again, they are virtually identical in electronic function, just laid out differently on the 8500 boards.
+
+ 
+
+The CPU board is virtually the same, but with added circuitry to provide upper bank switching.  This was used to increase effective RAM size from 64K to up to a max of 256K by swapping the upper 32K of RAM in/out as needed.  We called it ‘banking’ and the operating system ran all of the critical (non-breakable) programs in the lower 32K, while other program segments were loaded into various upper 32K banks.  During the boot process, the linking loader would follow a RAM map of where to place individual program segments (now called DLLs) and prefix their linkage addresses with an upper bank number.  Then as the operating system processed the various tasks (segments) and the addresses were resolved, the required upper bank was switched-in, and the CPU had no idea it was running code in a different (higher) 32K section.  It just appeared to be in the 32 to 64K address space.  
+
+ 
+
+The memory boards were then packed with different amounts of memory specific to which model of the 8500 system was purchased.  A full-blown 8500 had 256K RAM; i.e., the memory board was fully stuffed.  Your memory board appears to be ¾ stuffed, so it was from a 192K system.  The 8500 model numbers reflected their internal configuration.  Models numbered 8515 had less RAM than 8535 models, for example, and this of course this affected their cost.
+
+ 
+
+The display board was the most complicated and unique board of the 8000/8500 systems.  For its time, it was a wonder of engineering.  It was coupled directly to the memory board buy a 50-pin edge connector on the outer side of the board.  It did not just scan memory and display characters on the screen.  It possessed logic to interpret code codes embedded in the screen data to perform actions like:  reverse video on/off, underline characters, non-escape characters (i.e., the cursor did not move when these characters were displayed, allowing multiple characters to ‘build-up’ on one character spot on the screen. This was used to create what we called ‘hat’ characters).  Plus even more powerful, some control codes directed the display hardware to ‘jump’ to other addresses in memory and resume displaying characters at that new location.  This is what allowed the CPT screen to display and scroll multiple windows at high-speed, with no flicker whatsoever.  The screen characters were held in proms that could be changed to provide different fonts, and different language characters.  CPT was the first word processor to provide a full Arabic character word processing (right to left) solution.  Later, but never put into production, we (the Research Dept.) even created modified display boards that had software loadable character proms that allowed ‘on the fly’ multiple language documents and special scientific notation displays.  The CPT 8000/8500 word processing software was available in several languages:  English, French, German, Italian, Slovic, Arabic, Korean, Chinese, Japanese, etc.  Too many to remember.  A couple engineers even created proms to mimic and play chess and various video games.
+
+ 
+
+The video output is high-speed ECL.
+
+ 
+
+The back plane was CPT’s unique design.  It was 100-pin connectors, with a few special signal paths.  Board location was non-specific, i.e., any board could be placed in any back plane socket.  I have schematics for this; you will need to make one to connect the boards together.
+
+ 
+
+The keyboard was a Cortron unit specific to CPT.  Here’s good info and even a converter some guy made.  I think I have schematics for the 8000 keyboard. https://deskthority.net/viewtopic.php?f=7&p=475382
+
+ 
+
+Now about your TI-SR60A and the CPT 4200 with Selectric printer.  Before the 8000 series microprocessor-based word processors, CPT’s first product was the 4200 dual-tape unit with a modified IBM Selectric typewriter.  The 4200 contained discreet logic that read keystrokes from the modified IBM Selectric and recorded them to cassette tapes.  The input (a typed letter) could then be replayed back to the Selectric from the 4200.  The 4200 also had special features that used a second (upper) cassette deck.  While playing back from the main (lower) tape deck, and the letter being typed, if a ‘switch code’ was encountered, the 4200 would switch to the upper tape deck and read (type out) whatever was recorded on that tape, until another ‘switch code’ was encountered.  Then it would switch back to the lower tape deck and resume reading (typing) from there.  So, the main body of a business letter would be typed (inputted) into the main tape deck, but when an address or name or some other distinct information was to appear in individual “personalized” letters, that’s where the ‘switch code’ would be inserted.  On the upper tape deck, just those individual items would be entered.  Then when both tapes were rewound, paper was inserted into the Selectric and Play was pressed – The letter would begin typing, automatically filling-in the different names, addresses, etc. throughout the letter as it went along.  Once the letter was done, the bottom tape would rewind, and the printer would wait until a new sheet of paper was inserted.  Letter writing services, lawyers, etc.  used these everywhere to compose and then print hundreds of “personalized”, error-free, letters.
+
+ 
+
+The interesting part for you will be the CPT modified IBM Selectric printer.  CPT removed the mechanical keyboard from the Selectric and replaced it with an electronic keyboard.  They also replaced the mechanical key actuators with mini electric solenoids that pulled the actuators causing the typewriter to type.   A circuit board placed under the keyboard controlled all of this.  It had a small character buffer and Darlington transistors that switched the solenoids on/off.  This was fed out the back of the electric via a D-Shell connector to the 4200.  The 4200 supplied the DC voltages to the Selectric’s electronics.  The first modified versions of the Selectric’s were called CPT Rotary I printers.  Later, CPT improved the Selectrics performance be further modifying their escapement mechanism.  They removed the entire escapement section and replaced it with a toothed rotating metal disk that had a Hall effect sensor that counted the teeth as is revolved.  This way the pitch of the typewriter could be quickly changed by just changing the escapement disk.  It also allowed the Selectric to type faster because the mechanical movement was eliminated.  CPT called these new improved Selectrics Rotary II printers.  That’s a Rotary II Selectric printer the TI unit is connected to in the picture below.  I began my career with CPT as a service tech repairing 4200s and these typewriters, in Philadelphia.  Then later becoming a hardware/software engineer at their Minnesota headquarters.
+
+ 
+
+Unfortunately, I do not have any schematics for the 4200 or the modified Selectric printers.  However, I do know the man who invented the 4200 and created the modifications to the Selectric printers.  His name is Jim Wienhold and he was one of the co-founders for CPT corp.   After CPT, Jim started another business called Insta-Bit.  Jim is a brilliant guy and one of those truly humble people that you get to meet perhaps once in a lifetime.  I haven’t spoken to Jim since the 1980’s.  If you need to know about the 4200/Selectric interface he’s the guy.  I would start by contacting insty-bit.com and asking for him.  You may refer to me, he may remember Rich Jones.
+
+ 
+
+Okay, that’s enough for now…  Jeez, I wrote a lot!
+
+ 
+
+I will compile the schematics together and send them in the next few days.
+
+ 
