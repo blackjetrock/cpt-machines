@@ -3,7 +3,7 @@
 
 key_scale = 1;   // Small key
 
-double_key = 1;
+double_key = 0;
 
 //key_scale = 2.23;
 
@@ -257,6 +257,18 @@ module rem(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
     {
       cylinder(d = 6.8, h = 9.9, center=true);
     }
+    
+  translate([0, 0, -3.26])
+    {
+        $fn = 200;
+        
+      difference()
+        {
+        cylinder(d = 13.8, h = 2.6, center=true);
+        cylinder(d = 8.6,  h = 2.65, center=true);
+        }
+    }
+  
 }
 
 module key(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
@@ -269,7 +281,21 @@ module key(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
         rem(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2);
     }
     
-    
+  // Keying bumps
+    difference()
+    {
+      {
+          translate([0, 0, -5])
+          rotate([0, 90, 0])
+          {
+           cylinder(h=10.3, r=1.4/2, $fn=50, center=true);
+          }
+      }
+      
+    translate([0, 0, -4])
+    cylinder($fn = 100, d = 8.6, h = 6.3, center=true);
+  }
+  
   // Main stem
   difference()
     {
@@ -289,7 +315,6 @@ module key(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
 
 
 //key(2, "SRCH", "", -1.6, 2, 0.2, -2.2, 3.5, 0.3);
-
 //key(2, "WORD", "", -1.9, 2, 0.2, -2.2, 3.5, 0.3);
 //key(2, "1", "RWD", 1.1, -0.2, 0.3, -2.2, 3.5, 0.3);
 //key(2, "2", "RWD", 1.1, -0.2, 0.3, -2.2, 3.5, 0.3);
@@ -298,24 +323,16 @@ module key(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
 //key(2, "", "CODE", 1.0, -0.2, 0.3, -3.6, 1.8, 0.3);
 //key(2, "REC", "", -1.8, 1.6, 0.3, -2.2, 3.5, 0.3);
 //key(2, "", "LINE", 1.0, -0.2, 0.3, -2.2, 1.8, 0.3);
-
-// PARA
 //key(2, "", "PARA", 1.0, -0.2, 0.3, -3.1, 1.8, 0.3);
-
-// PAGE
 //key(2, "", "PAGE", 1.0, -0.2, 0.3, -3.1, 1.8, 0.3);
-
-// ADJ
-//key(2, "ADJ", "", -1.6, 1.6, 0.3, -2.2, 3.5, 0.3);
-
-// SRCH
+key(2, "ADJ", "", -1.6, 1.6, 0.3, -2.2, 3.5, 0.3);
 
 // Large keys
 // READ
 //key(2, "READ", "", -3.1, 1.6, 0.3, -2.2, 3.5, 0.3);
 
 // SKIP
-key(2, "SKIP", "", -2.8, 1.6, 0.3, -2.2, 3.5, 0.3);
+//key(2, "SKIP", "", -2.8, 1.6, 0.3, -2.2, 3.5, 0.3);
 
 // STOP
 //key(2, "STOP", "", -3.1, 1.6, 0.3, -2.2, 3.5, 0.3);
