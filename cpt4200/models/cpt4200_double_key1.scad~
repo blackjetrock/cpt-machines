@@ -1,7 +1,10 @@
-// CPT4200 replacement keys
+// CPT4200 replacement double keys
 //
 
 key_scale = 1;   // Small key
+
+double_key = 1;
+
 //key_scale = 2.23;
 
 $fn = 40;
@@ -22,7 +25,7 @@ kbh = 3.0;
 kbh2 = kbh/2;
 kbh2r = kbh2-kr;
 
-module pre()
+module flat_shell()
 {
 
 //rotate([0, 0, 45])
@@ -88,6 +91,98 @@ translate([ kb2r, kb2r, -kh2r-kbh2r])
 }
 
 }
+
+module dish_sphere()
+{
+    // Dish on top
+    dr = 25;
+    scale([key_scale, 1, 1])    
+        translate([0, 2, 30.8])
+        {
+            sphere(r = dr, center=true, $fn=300);
+        }
+}
+
+module pre_shell()
+{
+difference()
+    {
+    flat_shell();
+dish_sphere();
+    }
+
+}
+
+
+ccx = 30;
+ccy = 30;
+ccz = 30;
+dk_mid_len = 35.45 - 15.0;
+
+module left_shell()
+{
+    translate([-dk_mid_len/2, 0, 0])
+    difference()
+        {
+        pre_shell();
+            translate([ccx/2, 0, 0])
+            {
+                cube([ccx, ccy, ccz], center=true);
+            }
+        }   
+}
+
+module right_shell()
+{
+    translate([dk_mid_len/2, 0, 0])
+    difference()
+        {
+        pre_shell();
+            translate([-ccx/2, 0, 0])
+            {
+                cube([ccx, ccy, ccz], center=true);
+            }
+        }   
+}
+
+
+module mid_shell()
+{
+    
+    // A 1mm slice of the middle of the key
+    difference()
+        {
+        pre_shell();
+            translate([ccx/2+0.5, 0, 0])
+            {
+                cube([ccx, ccy, ccz], center=true);
+            }
+            translate([-ccx/2-0.5, 0, 0])
+            {
+                cube([ccx, ccy, ccz], center=true);
+            }
+
+        }   
+}
+
+module pre()
+{
+    if(!double_key)
+    {
+        pre_shell();
+    }
+    else
+    {
+        left_shell();
+        
+        // Scale by the length
+        scale([dk_mid_len, 1, 1])
+
+        mid_shell();
+        right_shell();
+    }
+}
+
 use </usr/share/fonts/liberation-sans-fonts/LiberationSans-Bold.ttf>
 
 font = "Liberation Sans";
@@ -137,13 +232,6 @@ if(0) {
     }
 }
 
-    // Dish on top
-    dr = 25;
-    scale([key_scale, 1, 1])    
-        translate([0, 2, 30.8])
-        {
-            sphere(r = dr, center=true, $fn=300);
-        }
 
     translate([-2.5, -3, 4.75])
     {
@@ -196,7 +284,7 @@ difference()
 }
 }
 
-// SRCH
+
 //key(2, "SRCH", "", -1.6, 2, 0.2, -2.2, 3.5, 0.3);
 
 //key(2, "WORD", "", -1.9, 2, 0.2, -2.2, 3.5, 0.3);
@@ -217,6 +305,7 @@ difference()
 // ADJ
 key(2, "ADJ", "", -1.6, 1.6, 0.3, -2.2, 3.5, 0.3);
 
+// SRCH
 
 // Large keys
 // READ
