@@ -21,7 +21,7 @@ foreach digit [split $bindigits ""] {
     }
     incr i 1
     if { $digit } {
-        puts -nonewline " "
+        puts -nonewline "X"
     } else {
         puts -nonewline "O"
     }

@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ajm-video") (type "KiCad") (uri "${KIPRJMOD}/ajm-video.pretty") (options "") (descr ""))
+)
