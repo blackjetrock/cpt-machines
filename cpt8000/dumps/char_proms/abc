@@ -1,0 +1,2821 @@
+File 1:  u80.bin
+File 2:  u72.bin
+Width: 16
+Length of bitstream1:8192
+Length of bitstream2:8192
+
+Code :00 
+        
+        
+        
+        
+        
+        
+        
+X      X
+        
+        
+XXX   XX
+ X    X 
+        
+        
+   X X  
+ X    X 
+
+
+
+
+
+Code :01 
+        
+        
+        
+        
+        
+   X    
+   X    
+      X 
+        
+   X    
+XX   XX 
+X    X  
+        
+   X    
+  X X   
+X    X  
+
+
+
+
+
+Code :02 
+        
+        
+        
+        
+        
+  X     
+  XX    
+     X  
+        
+  X     
+X   XX  
+    X   
+        
+  X     
+ X     X
+    X   
+
+
+
+
+
+Code :03 
+        
+        
+        
+        
+        
+ X      
+ XX     
+    X   
+        
+ X      
+   XX  X
+        
+        
+ X      
+X     X 
+        
+
+
+
+
+
+Code :04 
+        
+        
+        
+        
+        
+X       
+XX     X
+        
+        
+X       
+  X   X 
+        
+        
+X       
+   X X  
+        
+
+
+
+
+
+Code :05 
+        
+        
+        
+        
+        
+        
+X  X  X 
+        
+        
+        
+ X   X  
+        
+        
+        
+  X X   
+        
+
+
+
+
+
+Code :06 
+        
+        
+        
+        
+        
+        
+  XX X X
+       X
+        
+        
+X   X  X
+       X
+        
+        
+ X     X
+       X
+
+
+
+
+
+Code :07 
+        
+        
+        
+        
+        
+   X   X
+ XXXX XX
+      X 
+        
+   X   X
+      X 
+      X 
+        
+   X   X
+X     X 
+      X 
+
+
+
+
+
+Code :08 
+        
+        
+        
+        
+        
+  X   X 
+XXX  XXX
+     X  
+        
+  X   X 
+   X X  
+     X  
+        
+  X   X 
+   X X  
+     X  
+
+
+
+
+
+Code :09 
+        
+        
+        
+        
+        
+ X   X  
+XX XXXX 
+    X   
+   X    
+ X   X  
+  X X   
+    X   
+   X    
+ X   X  
+  X X   
+    X   
+
+
+
+
+
+Code :0A 
+        
+        
+        
+        
+        
+X  XX   
+X XXXX  
+        
+  XX    
+X  XX   
+ X      
+        
+  XX    
+X  XX   
+ X     X
+        
+
+
+
+
+
+Code :0B 
+        
+        
+        
+        
+        
+  X     
+ XXXX   
+        
+ XX     
+  X     
+X      X
+        
+ XX     
+  X     
+X     X 
+        
+
+
+
+
+
+Code :0C 
+        
+        
+        
+        
+        
+ X     X
+XXX    X
+        
+XX     X
+ X     X
+   X  X 
+        
+XX     X
+ X     X
+     X  
+        
+
+
+
+
+
+Code :0D 
+        
+        
+        
+        
+   X    
+X  X  X 
+XX X  X 
+        
+X  X  X 
+X  X  X 
+  X  X  
+        
+X  X  X 
+X  X  X 
+    X   
+        
+
+
+
+
+
+Code :0E 
+        
+        
+        
+        
+  XX    
+  X  X  
+X XX X X
+        
+  X  X  
+  XX X  
+ X  X  X
+        
+  X  X  
+  X  X X
+       X
+        
+
+
+
+
+
+Code :0F 
+        
+        
+        
+        
+ XX     
+ X  X   
+ XX X XX
+   X    
+ X  X   
+ XXXX  X
+X  X  X 
+   X    
+ X  X   
+ X  X X 
+      X 
+   X    
+
+
+
+
+
+Code :10 
+        
+        
+        
+        
+XX     X
+X       
+XX   XXX
+  X     
+X       
+XXXX  XX
+  X  X  
+  X     
+X       
+X    X  
+   X X  
+  X     
+
+
+
+
+
+Code :11 
+        
+        
+        
+        
+X  X  X 
+        
+X  XXXX 
+ X      
+   X    
+XXX  XX 
+ X  X   
+ X      
+   X    
+    X   
+  X X   
+ X      
+
+
+
+
+
+Code :12 
+        
+        
+        
+        
+  X  X  
+        
+  XXXX X
+X       
+  X     
+XX  XX X
+X      X
+X       
+  XX    
+        
+ X     X
+X       
+
+
+
+
+
+Code :13 
+        
+        
+        
+        
+ X  X   
+       X
+ XXXX XX
+        
+ X      
+X   X X 
+      X 
+        
+ XXX   X
+   X   X
+X     X 
+        
+
+
+
+
+
+Code :14 
+        
+        
+        
+        
+X       
+      X 
+XXXX XXX
+        
+X       
+   X X X
+     X  
+        
+XXX   XX
+  X   X 
+     X  
+        
+
+
+
+
+
+Code :15 
+        
+        
+        
+        
+        
+   X X  
+XXXXXXX 
+   X    
+        
+  X X X 
+    X   
+        
+XX   XX 
+ X   X  
+    X   
+        
+
+
+
+
+
+Code :16 
+        
+        
+        
+        
+        
+  X X   
+XXXXXX X
+  XX    
+        
+ X X X X
+       X
+        
+X   XX  
+X  XX  X
+       X
+        
+
+
+
+
+
+Code :17 
+        
+        
+        
+        
+        
+ X     X
+XXXXX XX
+ XX     
+        
+X X X X 
+      X 
+   X    
+    X   
+  X   X 
+      X 
+        
+
+
+
+
+
+Code :18 
+        
+        
+        
+        
+        
+X     XX
+XXXX XXX
+XX      
+        
+ X   X  
+     X  
+  X    X
+        
+ X   X  
+     X  
+       X
+
+
+
+
+
+Code :19 
+        
+        
+        
+        
+   X    
+   X XX 
+XXXXXXX 
+X       
+   X    
+X  XX   
+    X   
+ X    X 
+   X    
+X  XX   
+    X   
+      X 
+
+
+
+
+
+Code :1A 
+        
+        
+        
+        
+  X     
+  X XX  
+XXXXXX  
+        
+  XX    
+  X     
+        
+X    X  
+  XX    
+  X     
+       X
+     X  
+
+
+
+
+
+Code :1B 
+        
+        
+        
+        
+ X      
+ X  X   
+XXXXX   
+        
+ XX     
+ X      
+       X
+    X   
+ XXX   X
+ X      
+      X 
+    X   
+
+
+
+
+
+Code :1C 
+        
+        
+        
+        
+X       
+X       
+XXX    X
+        
+XX     X
+X       
+   X  X 
+        
+XXX   XX
+X       
+     X  
+        
+
+
+
+
+
+Code :1D 
+        
+        
+        
+        
+        
+        
+XX    X 
+        
+X  X  X 
+   X    
+  X  X  
+        
+XX   XX 
+        
+    X   
+        
+
+
+
+
+
+Code :1E 
+        
+        
+        
+        
+        
+   X    
+X    X X
+       X
+  XX X  
+  X     
+ X  X  X
+       X
+X   XX X
+        
+       X
+       X
+
+
+
+
+
+Code :1F 
+        
+        
+        
+        
+        
+  X     
+    X X 
+      X 
+ XX X  X
+ X      
+X     X 
+      X 
+   XX X 
+        
+      X 
+      X 
+
+
+
+
+
+Code :20 
+        
+        
+        
+        
+        
+ X      
+   X X  
+     X  
+XX    XX
+X       
+   X X  
+     X  
+  X  X  
+       X
+   X X  
+     X  
+
+
+
+
+
+Code :21 
+        
+        
+        
+        
+        
+X       
+  XXX   
+    X   
+X    XX 
+   X    
+  XXX   
+   XX   
+ X XX   
+      X 
+  XXX   
+    X   
+
+
+
+
+
+Code :22 
+        
+        
+        
+        
+        
+        
+ XXX    
+        
+    XX  
+  X     
+ XX     
+  X     
+X X     
+   X X  
+ XX     
+        
+
+
+
+
+
+Code :23 
+        
+        
+        
+        
+       X
+        
+XXXX   X
+        
+    X  X
+ X      
+XX      
+ X      
+ X     X
+  X X   
+XX      
+        
+
+
+
+
+
+Code :24 
+        
+        
+        
+        
+      X 
+       X
+XXX   XX
+        
+      XX
+X       
+X       
+X       
+X     XX
+ X      
+X       
+        
+
+
+
+
+
+Code :25 
+        
+        
+        
+        
+   X X  
+      X 
+XX   XX 
+        
+     XX 
+   X    
+        
+        
+     XX 
+X  X    
+        
+        
+
+
+
+
+
+Code :26 
+        
+        
+        
+        
+  XXX  X
+     X  
+X   XX  
+        
+    XX  
+  X     
+        
+        
+    XX  
+  X    X
+        
+        
+
+
+
+
+
+Code :27 
+        
+        
+        
+        
+ XX   XX
+    X   
+    X   
+        
+    X   
+ X      
+        
+   X    
+    X   
+ X    X 
+        
+        
+
+
+
+
+
+Code :28 
+        
+        
+        
+        
+XX   XXX
+        
+   X    
+        
+       X
+X       
+   X    
+  X     
+   X   X
+X  X X  
+   X    
+        
+
+
+
+
+
+Code :29 
+        
+        
+        
+        
+X  XXXX 
+        
+  X     
+        
+      X 
+   X    
+  X     
+ X      
+  XX  X 
+  XXX   
+  X     
+        
+
+
+
+
+
+Code :2A 
+        
+        
+        
+        
+  XXXX  
+        
+ X     X
+       X
+     X X
+  X     
+ X     X
+X      X
+ XXX X X
+ XX     
+ X X   X
+       X
+
+
+
+
+
+Code :2B 
+        
+        
+        
+        
+ XXXX  X
+        
+X     X 
+      X 
+    X X 
+ X      
+X  X  X 
+      X 
+XXX X X 
+XX      
+X X   X 
+      X 
+
+
+
+
+
+Code :2C 
+        
+        
+        
+        
+XXX   XX
+        
+   X X  
+     X  
+   X X  
+X       
+  X  X  
+     X  
+XX X X X
+X       
+ X   X  
+     X  
+
+
+
+
+
+Code :2D 
+        
+        
+        
+        
+XX X XX 
+        
+  X X   
+   XX   
+  X X   
+        
+ X  X   
+   XX   
+X XXX X 
+        
+X   X   
+   XX   
+
+
+
+
+
+Code :2E 
+        
+        
+        
+        
+X XXXX  
+        
+ X     X
+  X     
+ X     X
+        
+X      X
+  X     
+ XXX X X
+        
+       X
+  X     
+
+
+
+
+
+Code :2F 
+        
+        
+        
+        
+ XX X  X
+        
+X     X 
+ X      
+X  X  X 
+        
+      X 
+ X      
+XXX X X 
+        
+      X 
+ X      
+
+
+
+
+
+Code :30 
+        
+        
+        
+        
+XX    XX
+        
+     X  
+X      X
+  X  X  
+        
+     X  
+X       
+XX X X X
+        
+     X  
+X       
+
+
+
+
+
+Code :31 
+        
+        
+        
+        
+X    XX 
+        
+    X   
+      X 
+ X  X   
+        
+    X   
+        
+X XXX X 
+        
+    X   
+        
+
+
+
+
+
+Code :32 
+        
+        
+        
+        
+    XX  
+        
+       X
+     X  
+X  X    
+        
+       X
+        
+ XXX X  
+        
+   X   X
+        
+
+
+
+
+
+Code :33 
+        
+        
+        
+        
+   XX   
+        
+      X 
+    X   
+  XX    
+        
+   X  XX
+        
+XXXXX   
+        
+  X   X 
+        
+
+
+
+
+
+Code :34 
+        
+        
+        
+        
+  X     
+        
+   X X  
+        
+ XX     
+        
+  XX XX 
+        
+XXX     
+        
+ X X X X
+        
+
+
+
+
+
+Code :35 
+        
+        
+        
+        
+ X      
+        
+  X X   
+        
+XX X    
+        
+ XX XX  
+        
+XX      
+        
+X X X X 
+        
+
+
+
+
+
+Code :36 
+        
+        
+        
+        
+X       
+        
+ X     X
+        
+X XX    
+        
+XX  X  X
+        
+X      X
+        
+ X   X X
+        
+
+
+
+
+
+Code :37 
+        
+        
+        
+        
+        
+        
+X     X 
+        
+ XX    X
+        
+X     XX
+        
+   X  X 
+        
+X   X X 
+        
+
+
+
+
+
+Code :38 
+        
+        
+        
+        
+        
+        
+   X X  
+        
+XX    XX
+        
+   X XX 
+        
+  X  X  
+        
+   X X X
+        
+
+
+
+
+
+Code :39 
+       X
+        
+        
+        
+       X
+        
+  XXX   
+        
+X    XXX
+        
+  X XX  
+        
+ X  X  X
+        
+  X X X 
+        
+
+
+
+
+
+Code :3A 
+      X 
+        
+        
+        
+      X 
+        
+ XXX    
+        
+    XXX 
+        
+ X  X  X
+        
+X     X 
+        
+ X   X X
+        
+
+
+
+
+
+Code :3B 
+     X  
+        
+        
+        
+     X  
+        
+XXXX   X
+        
+    XX  
+        
+X     X 
+        
+     X  
+   X    
+X   X X 
+        
+
+
+
+
+
+Code :3C 
+    X   
+        
+        
+        
+    X   
+        
+XXX   XX
+        
+    X   
+   X    
+   X X  
+        
+    X   
+  X     
+   X X  
+        
+
+
+
+
+
+Code :3D 
+        
+        
+        
+        
+        
+   X    
+XX X XX 
+        
+   X    
+  X     
+  X X   
+        
+        
+ X      
+  X X   
+        
+
+
+
+
+
+Code :3E 
+        
+        
+        
+        
+        
+  XX    
+X XXXX X
+        
+  X     
+ X      
+ X     X
+        
+        
+X      X
+ X     X
+        
+
+
+
+
+
+Code :3F 
+        
+        
+        
+        
+        
+ XX     
+ XXXX XX
+        
+ X      
+X  X   X
+X     X 
+        
+        
+      X 
+X     X 
+        
+
+
+
+
+
+Code :40 
+        
+        
+        
+        
+        
+XX     X
+XXX  XXX
+        
+X       
+  X   X 
+   X X  
+        
+        
+   X X  
+   X X  
+        
+
+
+
+
+
+Code :41 
+        
+        
+        
+        
+   X    
+X  X  X 
+XX XXXX 
+        
+   X    
+ X X X  
+  X X   
+        
+   X    
+  XXX   
+  X X   
+        
+
+
+
+
+
+Code :42 
+        
+        
+        
+        
+  X     
+  X  X  
+X XXXX  
+        
+  X     
+X X X   
+ X      
+        
+  X     
+ XX     
+ X     X
+        
+
+
+
+
+
+Code :43 
+        
+        
+        
+        
+ X      
+ X  X   
+ XX X   
+        
+ X      
+ X      
+X  X   X
+        
+ X      
+XX     X
+X     X 
+        
+
+
+
+
+
+Code :44 
+        
+        
+        
+        
+X       
+X       
+XX     X
+        
+X       
+X      X
+  X   X 
+        
+X       
+X     XX
+   X X  
+        
+
+
+
+
+
+Code :45 
+        
+        
+        
+        
+   X    
+   X    
+X  X  X 
+        
+        
+      X 
+ X   X  
+        
+        
+     XX 
+  X X   
+        
+
+
+
+
+
+Code :46 
+        
+        
+        
+        
+  XX    
+  XX    
+  XX X X
+        
+        
+     X X
+X   X  X
+        
+       X
+    XX  
+ X     X
+        
+
+
+
+
+
+Code :47 
+        
+        
+        
+        
+ XXX    
+ XXX   X
+ XXXX XX
+        
+       X
+    X X 
+      X 
+        
+      X 
+    X   
+X     X 
+        
+
+
+
+
+
+Code :48 
+        
+        
+        
+        
+XXX    X
+XXX   XX
+XXX  XXX
+        
+   X  X 
+   X X  
+   X X  
+        
+     X  
+   X    
+   X X  
+        
+
+
+
+
+
+Code :49 
+        
+        
+        
+        
+XX    X 
+XX X XX 
+XX XXXX 
+        
+  X  X  
+  X X   
+  X X   
+        
+    X   
+  X     
+  X X   
+        
+
+
+
+
+
+Code :4A 
+        
+        
+        
+        
+X    X  
+X XXXX  
+X XXXX  
+        
+ X  X   
+ X     X
+ X     X
+        
+        
+ X      
+ X     X
+        
+
+
+
+
+
+Code :4B 
+        
+        
+        
+        
+    X   
+ XXXX  X
+ XXXX  X
+        
+X       
+X     X 
+X     X 
+        
+        
+X       
+X     X 
+        
+
+
+
+
+
+Code :4C 
+        
+        
+        
+        
+        
+XXX   XX
+XXX   XX
+        
+        
+   X X  
+   X X  
+        
+        
+   X    
+     X  
+        
+
+
+
+
+
+Code :4D 
+        
+        
+        
+        
+   X    
+XX   XX 
+XX X XX 
+        
+        
+  X X   
+  XXX   
+        
+        
+  XX    
+   XX   
+        
+
+
+
+
+
+Code :4E 
+        
+        
+        
+        
+  XX    
+X   XX  
+X XXXX X
+        
+        
+ X X    
+ XX     
+        
+   X   X
+ XX     
+  X     
+        
+
+
+
+
+
+Code :4F 
+        
+        
+        
+        
+ XX     
+   XX   
+ XXXX XX
+        
+   X   X
+X XX    
+XX      
+        
+  X   X 
+XX X    
+ X      
+        
+
+
+
+
+
+Code :50 
+        
+        
+        
+        
+XX X   X
+  X     
+XXXX XXX
+        
+  X   X 
+ XX     
+X       
+       X
+ X X X  
+X X     
+X       
+       X
+
+
+
+
+
+Code :51 
+        
+        
+        
+        
+X X   X 
+ X X    
+XXX XXX 
+        
+ X   X  
+XX      
+        
+      X 
+X XXX   
+ X      
+        
+      X 
+
+
+
+
+
+Code :52 
+        
+        
+        
+        
+ X   X  
+X XX   X
+XX  XX X
+        
+X   X   
+X      X
+       X
+     X  
+ XXX    
+X      X
+       X
+     X  
+
+
+
+
+
+Code :53 
+        
+        
+        
+        
+X   X   
+ XXX  XX
+X   X X 
+        
+        
+      X 
+      X 
+    X   
+XXX     
+      X 
+      X 
+    X   
+
+
+
+
+
+Code :54 
+        
+        
+        
+        
+        
+XXX  XXX
+   X X  
+        
+        
+     X  
+   X X  
+        
+XX X   X
+     X  
+   X X  
+        
+
+
+
+
+
+Code :55 
+        
+        
+        
+        
+   X    
+XX XXXX 
+  X X   
+        
+   X    
+    X   
+  X X   
+        
+X XX  X 
+    X   
+  X X   
+        
+
+
+
+
+
+Code :56 
+        
+        
+        
+        
+  XX    
+X XXXX  
+ X     X
+        
+  X     
+        
+ X     X
+        
+ XX  X X
+       X
+ X     X
+        
+
+
+
+
+
+Code :57 
+        
+        
+        
+        
+ XXX    
+ XXXX   
+X     X 
+        
+ X     X
+       X
+X     X 
+        
+XX  X X 
+      X 
+X     X 
+        
+
+
+
+
+
+Code :58 
+        
+        
+        
+        
+XXXX   X
+XXX    X
+   X X  
+        
+X     X 
+      X 
+   X X  
+        
+X    X  
+     X  
+   X X  
+        
+
+
+
+
+
+Code :59 
+        
+        
+        
+        
+XXX   X 
+XX X  X 
+  X X   
+        
+     X  
+     X  
+  X X   
+        
+    X   
+    X   
+  X X   
+        
+
+
+
+
+
+Code :5A 
+        
+        
+        
+        
+XX   X  
+X XX X X
+ X     X
+        
+    X   
+    X  X
+ X     X
+        
+        
+        
+ X     X
+        
+
+
+
+
+
+Code :5B 
+        
+        
+        
+        
+X   X   
+ XXXX XX
+X     X 
+        
+        
+      X 
+X     X 
+        
+        
+   X    
+X     X 
+        
+
+
+
+
+
+Code :5C 
+        
+        
+        
+        
+        
+XXXX XXX
+   X X  
+        
+        
+   X X  
+   X X  
+        
+        
+  X     
+   X X  
+        
+
+
+
+
+
+Code :5D 
+        
+        
+        
+        
+   X    
+XXXXXXX 
+  X X   
+        
+        
+  X X   
+  X X   
+        
+        
+ X      
+  X X   
+        
+
+
+
+
+
+Code :5E 
+        
+        
+        
+        
+  XX    
+XXXXXX  
+ X     X
+        
+        
+ X     X
+ X     X
+        
+       X
+X      X
+ X      
+        
+
+
+
+
+
+Code :5F 
+        
+        
+        
+        
+ XX     
+XXXXX  X
+X     X 
+        
+   X   X
+X     X 
+X     X 
+        
+      X 
+      X 
+X  X   X
+        
+
+
+
+
+
+Code :60 
+        
+        
+        
+        
+XX     X
+XXX   XX
+   X X  
+        
+  X   X 
+   X X  
+   X X  
+        
+   X X  
+   X X  
+  X   X 
+        
+
+
+
+
+
+Code :61 
+        
+        
+        
+        
+X     X 
+XX X XX 
+  X X   
+        
+ X   X  
+  X X   
+  X X   
+        
+  X X   
+  X X   
+ X   X  
+        
+
+
+
+
+
+Code :62 
+        
+        
+        
+        
+     X X
+X XXXX  
+ X     X
+        
+X   X   
+ X     X
+ X     X
+        
+ X X    
+ X     X
+X   X   
+        
+
+
+
+
+
+Code :63 
+        
+        
+        
+        
+    X X 
+ XXXX  X
+X     X 
+        
+   X   X
+X     X 
+X     X 
+        
+X X     
+X     X 
+   X   X
+        
+
+
+
+
+
+Code :64 
+        
+        
+        
+        
+   X X  
+XXX   XX
+   X X  
+        
+  X   X 
+   X X  
+   X X  
+        
+ X     X
+   X X  
+  X   X 
+        
+
+
+
+
+
+Code :65 
+        
+        
+        
+        
+  X X   
+XX   XX 
+  XXX   
+        
+ X   X  
+  X X   
+  X X   
+        
+X     X 
+  X X   
+ X   X  
+        
+
+
+
+
+
+Code :66 
+        
+        
+        
+        
+ X      
+X   XX  
+ XXX   X
+        
+X  XX   
+ X      
+ X      
+        
+   X X  
+ X      
+X   X   
+        
+
+
+
+
+
+Code :67 
+        
+        
+        
+        
+X  X    
+    X   
+XXXX  XX
+        
+  X     
+X       
+X       
+        
+  X X   
+X       
+   X    
+        
+
+
+
+
+
+Code :68 
+        
+        
+        
+        
+  X     
+        
+XXXX XXX
+        
+ X X    
+        
+   X    
+        
+ X      
+        
+  X     
+        
+
+
+
+
+
+Code :69 
+        
+        
+        
+        
+ X X    
+        
+XXXXXXX 
+   X    
+X X     
+        
+  X     
+   X    
+X       
+        
+ X      
+   X    
+
+
+
+
+
+Code :6A 
+        
+        
+        
+        
+X XX    
+        
+XXXXXX  
+  X     
+ X      
+        
+ X      
+  X     
+        
+        
+X       
+  X     
+
+
+
+
+
+Code :6B 
+        
+        
+        
+        
+ XX     
+        
+XXXXX   
+ X      
+X  X   X
+        
+X       
+ X      
+       X
+        
+        
+ X      
+
+
+
+
+
+Code :6C 
+        
+        
+        
+        
+XX     X
+        
+XXX    X
+X       
+  X   X 
+        
+       X
+X       
+      X 
+        
+       X
+X       
+
+
+
+
+
+Code :6D 
+        
+        
+        
+        
+X     X 
+        
+XX    X 
+        
+ X X X  
+   X    
+      X 
+        
+   X X  
+        
+      X 
+        
+
+
+
+
+
+Code :6E 
+        
+        
+        
+        
+     X  
+   X    
+X    X  
+        
+X X X   
+  X     
+     X X
+       X
+  X X  X
+        
+   X X  
+        
+
+
+
+
+
+Code :6F 
+        
+        
+        
+        
+    X   
+  X     
+    X  X
+       X
+ X X   X
+ X      
+   XX XX
+      XX
+ X X  XX
+        
+  X X  X
+   X   X
+
+
+
+
+
+Code :70 
+        
+        
+        
+        
+        
+ X      
+      X 
+      X 
+X XX  XX
+X       
+  X  XX 
+   X XX 
+X X  XXX
+       X
+ X    X 
+  X   X 
+
+
+
+
+
+Code :71 
+        
+        
+        
+        
+   X    
+X       
+   X X  
+   X X  
+ XX  XX 
+        
+ X  XX  
+  XXXX  
+ X  XXX 
+      X 
+X    X  
+ X X X  
+
+
+
+
+
+Code :72 
+        
+        
+        
+        
+  X     
+        
+  XXX   
+  X X   
+XX XXX  
+        
+X  XX   
+ XXXX   
+X   XX  
+     X  
+   XX   
+X X X   
+
+
+
+
+
+Code :73 
+        
+        
+        
+        
+ X      
+        
+ XX    X
+ X      
+X X X  X
+        
+  X     
+XXX     
+    X  X
+    X   
+  X     
+ X X   X
+
+
+
+
+
+Code :74 
+        
+        
+        
+        
+X      X
+        
+XX    XX
+X       
+ X    X 
+        
+ X      
+XX     X
+      X 
+        
+ X      
+X X   X 
+
+
+
+
+
+Code :75 
+        
+        
+        
+        
+      X 
+        
+X    XX 
+   X    
+X    X  
+        
+X       
+X     X 
+     X  
+   X    
+X       
+ X   X  
+
+
+
+
+
+Code :76 
+        
+        
+        
+        
+     X  
+        
+    XX X
+  XX    
+    X   
+        
+        
+     X  
+    X   
+  X     
+        
+X  XX   
+
+
+
+
+
+Code :77 
+        
+        
+        
+        
+    X   
+       X
+    X XX
+ XX     
+        
+        
+        
+   XX   
+        
+ X      
+   X   X
+  X     
+
+
+
+
+
+Code :78 
+        
+        
+        
+        
+        
+      X 
+     XXX
+XX      
+        
+       X
+       X
+  X    X
+        
+X       
+  X   XX
+ X      
+
+
+
+
+
+Code :79 
+        
+        
+        
+        
+        
+   X X  
+   XXXX 
+X  X    
+        
+      X 
+   X  X 
+ X    X 
+        
+        
+ X X XX 
+X  X    
+
+
+
+
+
+Code :7A 
+        
+        
+        
+        
+        
+  XXX   
+  X XX  
+  XX    
+        
+     X  
+  X  X  
+X    X  
+        
+        
+X XXXX  
+  XX    
+
+
+
+
+
+Code :7B 
+        
+        
+        
+        
+        
+ XXX    
+ X  X   
+ XX     
+        
+    X  X
+ X  X   
+   XX   
+        
+       X
+ XXXX  X
+ XX     
+
+
+
+
+
+Code :7C 
+        
+        
+        
+        
+        
+XXX    X
+X       
+XX     X
+        
+   X  X 
+X       
+  X     
+        
+   X  X 
+XXX   XX
+XX      
+
+
+
+
+
+Code :7D 
+        
+        
+        
+        
+        
+XX    X 
+   X    
+X     X 
+        
+  XX X  
+        
+ X      
+        
+  X  X  
+XX   XX 
+X       
+
+
+
+
+
+Code :7E 
+        
+        
+        
+        
+        
+X    X  
+  X     
+     X  
+        
+ XXXX   
+   X    
+X       
+        
+ X  X  X
+X  XXX  
+        
+
+
+
+
+
+Code :7F 
+        
+        
+        
+        
+        
+    X   
+ X      
+    X   
+        
+XXXX   X
+  X    X
+        
+        
+X     X 
+  X X  X
+        
+
+
+
+
