@@ -3,7 +3,7 @@
 
 key_scale = 1;   // Small key
 
-double_key = 1;
+double_key = 0;
 
 //key_scale = 2.23;
 
@@ -261,6 +261,20 @@ module rem(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
     {
       cylinder(d = 6.8, h = 9.9, center=true);
     }
+
+  // Open up inside the top of the key to provide mor eeven illuminationm
+  translate([0, 0, 3.95])
+    {
+        if ( double_key )
+        {
+           cube([37-10, 8.6, 2], center=true);
+
+        }
+        else
+        {
+           cube([18-10, 8.6, 2], center=true);
+        }
+    }
     
   translate([0, 0, -3.26])
     {
@@ -285,7 +299,8 @@ module key(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
         rem(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2);
     }
     
-  // Keying bumps
+    
+    // Keying bumps
     difference()
     {
       {
@@ -348,7 +363,7 @@ difference()
 //key(2, "", "LINE", 1.0, -0.2, 0.3, -2.2, 1.8, 0.3);
 //key(2, "", "PARA", 1.0, -0.2, 0.3, -3.1, 1.8, 0.3);
 //key(2, "", "PAGE", 1.0, -0.2, 0.3, -3.1, 1.8, 0.3);
-//key(2, "ADJ", "", -1.6, 1.6, 0.3, -2.2, 3.5, 0.3);
+key2(2, "ADJ", "", -1.6, 1.6, 0.3, -2.2, 3.5, 0.3);
 
 // Large keys
 // READ
@@ -358,13 +373,13 @@ difference()
 //key(2, "SKIP", "", -2.8, 1.6, 0.3, -2.2, 3.5, 0.3);
 
 // STOP
-key(2, "STOP", "", -3.1, 1.6, 0.3, -2.2, 3.5, 0.3);
+//key2(2, "STOP", "", -3.1, 1.6, 0.3, -2.2, 3.5, 0.3);
 
 //mid_shell();
 
 
 // Measuring stick
-if( 0 )
+if( 1 )
   {
   translate([0, 0, -7])
   cube([37, 2, 2], center=true);
