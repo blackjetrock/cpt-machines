@@ -75,9 +75,9 @@ for { set code 0} {$code < [expr 2**7]} {incr code 1} {
             # Discard upper nibbles
             # Use lower nibble to generate pixel data
             if { $d } {
-                puts -nonewline " "
+                puts -nonewline "."
             } else {
-                puts -nonewline "X"
+                puts -nonewline "O"
             }
         }
 
@@ -85,9 +85,9 @@ for { set code 0} {$code < [expr 2**7]} {incr code 1} {
             # Discard upper nibbles
             # Use lower nibble to generate pixel data
             if { $d } {
-                puts -nonewline " "
+                puts -nonewline "."
             } else {
-                puts -nonewline "X"
+                puts -nonewline "O"
             }
         }
         puts -nonewline "\n"

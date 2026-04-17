@@ -3,7 +3,7 @@
 
 key_scale = 1;   // Small key
 
-double_key = 0;
+double_key = 1;
 
 //key_scale = 2.23;
 
@@ -118,7 +118,11 @@ ccx = 30;
 ccy = 30;
 ccz = 30;
 
-dk_mid_len = 35.45 - 15.0;
+dk_mid_len = 35.45 - 15.0 - 1.45;
+
+total_width = dk_mid_len + kb;
+
+echo("Total width=", total_width);
 
 module left_shell()
 {
@@ -240,13 +244,13 @@ module rem(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
     {
       if( n == 1 )
         {
-          translate([0, 0, 0])
+          translate([0, 0, -0.1])
             legend(leg1, x1, y1, sc1);
         }
         
       if( n == 2 )
         {
-          translate([0, 0, 0])
+          translate([0, 0, -0.1])
             legend2(leg1, leg2, x1, y1, sc1, x2, y2, sc2);
         }
         
@@ -286,7 +290,7 @@ module key(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
     {
       {
           translate([0, 0, -5])
-          rotate([0, 90, 0])
+          rotate([90, 0, 0])
           {
            cylinder(h=10.3, r=1.4/2, $fn=50, center=true);
           }
@@ -313,6 +317,25 @@ module key(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
     }
 }
 
+slcx = 50;
+slcy = 50;
+slcz = 50;
+
+module key2(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
+{
+
+difference()
+  {
+  key(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2);
+      if(1)
+      {
+  translate([-slcx/2, 0, 0])
+      {
+          cube([slcx, slcy, slcz], center=true);
+      }
+  }
+  }
+}
 
 //key(2, "SRCH", "", -1.6, 2, 0.2, -2.2, 3.5, 0.3);
 //key(2, "WORD", "", -1.9, 2, 0.2, -2.2, 3.5, 0.3);
@@ -325,7 +348,7 @@ module key(n, leg1, leg2, x1, y1, sc1, x2, y2, sc2)
 //key(2, "", "LINE", 1.0, -0.2, 0.3, -2.2, 1.8, 0.3);
 //key(2, "", "PARA", 1.0, -0.2, 0.3, -3.1, 1.8, 0.3);
 //key(2, "", "PAGE", 1.0, -0.2, 0.3, -3.1, 1.8, 0.3);
-key(2, "ADJ", "", -1.6, 1.6, 0.3, -2.2, 3.5, 0.3);
+//key(2, "ADJ", "", -1.6, 1.6, 0.3, -2.2, 3.5, 0.3);
 
 // Large keys
 // READ
@@ -335,6 +358,16 @@ key(2, "ADJ", "", -1.6, 1.6, 0.3, -2.2, 3.5, 0.3);
 //key(2, "SKIP", "", -2.8, 1.6, 0.3, -2.2, 3.5, 0.3);
 
 // STOP
-//key(2, "STOP", "", -3.1, 1.6, 0.3, -2.2, 3.5, 0.3);
+key(2, "STOP", "", -3.1, 1.6, 0.3, -2.2, 3.5, 0.3);
 
 //mid_shell();
+
+
+// Measuring stick
+if( 0 )
+  {
+  translate([0, 0, -7])
+  cube([37, 2, 2], center=true);
+  }
+  
+ 
