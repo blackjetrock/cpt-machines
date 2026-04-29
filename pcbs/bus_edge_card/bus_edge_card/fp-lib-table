@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ajm-bus-edge") (type "KiCad") (uri "${KIPRJMOD}/ajm-bus-edge.pretty") (options "") (descr ""))
+)
